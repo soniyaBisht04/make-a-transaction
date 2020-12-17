@@ -1,0 +1,75 @@
+@use "../../../styles";
+
+.search-filter-container {
+  display: flex;
+  flex-direction: column;
+  @include styles.layout-media(gt-xs) {
+    flex-direction: row;
+  }
+
+  .search {
+    flex: 1;
+
+    .mat-form-field {
+      width: 95%;
+    }
+  }
+
+  .filters {
+    .sort-by {
+      line-height: 36px;
+      vertical-align: top;
+      margin-right: 10px;
+      @include styles.layout-media(gt-sm) {
+        margin-right: 15px;
+      }
+    }
+
+    ul {
+      display: inline-block;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      float: right;
+      @include styles.layout-media(gt-xs) {
+        float: initial;
+      }
+
+      li {
+        float: left;
+        border: solid 1px black;
+
+        span {
+          display: block;
+          font-size: 16px;
+          text-align: center;
+          padding: 5px 1px;
+          text-decoration: none;
+          @include styles.layout-media(gt-sm) {
+            padding: 8px 18px;
+          }
+
+          .arrow {
+            border-style: solid;
+            display: inline-block;
+            border-width: 5px 3px 0 3px;
+            border-color: grey transparent transparent transparent;
+            @include styles.layout-media(gt-sm) {
+              border-width: 10px 5px 0 5px;
+            }
+          }
+
+          .up {
+            transform: rotate(-180deg);
+            -webkit-transform: rotate(-180deg);
+          }
+
+          .down {
+            transform: rotate(0deg);
+            -webkit-transform: rotate(0deg);
+          }
+        }
+      }
+    }
+  }
+}

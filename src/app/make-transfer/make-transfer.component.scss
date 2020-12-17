@@ -1,0 +1,65 @@
+@use  "../../styles";
+
+.make-transfer-container {
+  background-color: #fff;
+  box-shadow: 0 0 10px #888888;
+  padding: 0;
+  //padding-bottom: 15px;
+  border-radius: 0;
+  flex: 1;
+
+  .mat-card-title {
+    background-color: #0c8397;
+    height: 40px;
+    color: #e7f0f2;
+    display: flex;
+    align-items: center;
+    .refresh-icon {
+      font-size: 30px;
+      flex: 0 0 40px;
+    }
+
+    .title {
+      font-size: 20px;
+      font-weight: normal;
+      text-align: center;
+      flex: 2;
+    }
+  }
+
+  .mat-card-content {
+    padding: 20px 15px;
+    .mat-form-field {
+      width: 100%;
+      .field-label {
+        font-size: 14px;
+        font-weight: 700;
+        color: black;
+        margin: 5px 0;
+      }
+    }
+    .mat-form-field-disabled {
+      ::ng-deep {
+        .mat-form-field-underline {
+          background-color: grey;
+          background-image: none;
+        }
+      }
+    }
+    .make-transfer-action {
+      display: flex;
+      flex-direction: row-reverse;
+      margin-right: initial;
+      .success-btn {
+
+      }
+      .disabled-item {
+        background-color: grey;
+        color: #bdbfbf;;
+        cursor: default;
+      }
+    }
+  }
+
+}
+

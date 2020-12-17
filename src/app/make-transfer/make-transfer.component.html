@@ -1,0 +1,26 @@
+<mat-card class="make-transfer-container">
+  <mat-card-title>
+    <mat-icon class="refresh-icon"> cached </mat-icon>
+    <mat-label class="title"> {{'content.makeATransfer' | translate}} </mat-label>
+  </mat-card-title>
+  <mat-card-content>
+    <form [formGroup]="makeTransaction">
+      <mat-form-field floatLabel="always">
+        <mat-label class="field-label">{{'content.fromAccount' | translate}}</mat-label>
+        <input type="text" matInput formControlName="fromAccount">
+      </mat-form-field>
+      <mat-form-field floatLabel="always">
+        <mat-label class="field-label">{{'content.toAccount' | translate}}</mat-label>
+        <input type="text" matInput formControlName="toAccount">
+      </mat-form-field>
+      <mat-form-field floatLabel="always">
+        <mat-label class="field-label">{{'content.amount' | translate}}</mat-label>
+        <input type="number" matInput formControlName="amount">
+      </mat-form-field>
+      <mat-card-actions class="make-transfer-action">
+        <button mat-raised-button class="button-success" [ngClass]="{'disabled-item':!isTransferEnable()}"
+                    type="button" (click)="confirmTransaction()">{{'content.submit' | translate}}</button>
+      </mat-card-actions>
+    </form>
+  </mat-card-content>
+</mat-card>

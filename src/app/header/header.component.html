@@ -1,0 +1,17 @@
+<header>
+    <div class="app-logo">
+      <a href="#">
+        <img src="../../assets/logo.jpg" alt="peachTreeBank">
+      </a>
+    </div>
+  <div class="language-selector">
+    <mat-form-field>
+      <mat-label>{{'content.language' | translate}}</mat-label>
+      <mat-select [formControl]="language">
+        <mat-option value="en">English</mat-option>
+        <mat-option value="nl">Netherlands</mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+</header>
+

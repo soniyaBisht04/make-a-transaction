@@ -1,0 +1,18 @@
+{
+  "data": {
+    "content.makeATransfer": "Make a Transfer",
+    "content.fromAccount": "FROM ACCOUNT",
+    "content.toAccount": "TO ACCOUNT",
+    "content.amount": "AMOUNT",
+    "content.submit": "SUBMIT",
+    "content.transfer": "TRANSFER",
+    "content.confirmTransaction": "Confirm Transaction",
+    "content.balance": "BALANCE",
+    "content.recentTransaction": "Recent Transactions",
+    "content.seachByTyping": "Search by typing...",
+    "content.sortBy": "Sort by",
+    "content.beneficiaries": "BENEFICIARIES",
+    "content.date": "DATE",
+    "content.language": "Language"
+  }
+}

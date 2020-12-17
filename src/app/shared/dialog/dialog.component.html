@@ -1,0 +1,24 @@
+<div class="dialog-container">
+  <h2 mat-dialog-title> {{'content.confirmTransaction' | translate}}</h2>
+  <mat-dialog-content>
+    <mat-label>
+      <span>{{'content.fromAccount' | translate}}:</span>
+      <p>{{data.fromAccount}}</p>
+    </mat-label>
+    <mat-label>
+      <span>{{'content.toAccount' | translate}}:</span>
+      <p>{{data.toAccount}}</p>
+    </mat-label>
+    <mat-label>
+      <span>{{'content.balance' | translate}}:</span>
+      <p>{{data.balance}}</p>
+    </mat-label>
+    <mat-label>
+      <span>{{'content.amount' | translate}}:</span>
+      <p>{{data.amount}}</p>
+    </mat-label>
+  </mat-dialog-content>
+  <mat-dialog-actions>
+    <button mat-button class="button-success" [mat-dialog-close]="true">{{'content.transfer' | translate}}</button>
+  </mat-dialog-actions>
+</div>

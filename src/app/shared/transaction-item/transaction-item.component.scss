@@ -1,0 +1,66 @@
+.transaction-item-container {
+  .transactions {
+    marging-top: 15px;
+
+    .transaction-list {
+
+      //width: 100%;
+      list-style: none;
+      //display: table;
+      //flex-direction: column;
+      margin: 0;
+      padding:0;
+      border-top: 2px solid #CACACA;
+      border-right: 2px solid #CACACA;
+
+      li {
+        display: table;
+        width: 100%;
+        border-spacing: 0;
+
+        span {
+          display: table-cell;
+          vertical-align: middle;
+          padding: 10px 0;
+          border-bottom: 2px solid #CACACA;
+
+        }
+
+        .bar {
+          width: 10px;
+          border-bottom: none;
+        }
+
+        .date {
+          text-align: center;
+        }
+
+        .amount {
+          text-align: right;
+          padding-right: 10px;
+          font-weight: 700;
+        }
+
+        .transactionType {
+          text-align: left;
+        }
+
+        .amount, span {
+          p {
+            font-size: 16px;
+          }
+        }
+
+        span p strong {
+          line-height: 20px;
+          display: block;
+          font-weight: 700;
+        }
+
+        .amount, .date, .image {
+          width: 18%;
+        }
+      }
+    }
+  }
+}

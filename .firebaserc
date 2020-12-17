@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "transaction-application": {
+      "hosting": {
+        "make-a-transaction": [
+          "transaction-application"
+        ]
+      }
+    }
+  }
+}

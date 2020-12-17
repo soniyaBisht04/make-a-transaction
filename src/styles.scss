@@ -1,0 +1,84 @@
+/* You can add global styles to this file, and also import other style files */
+
+$breakpoint-xxs: 360px !default;
+$breakpoint-xs: 600px !default;
+$breakpoint-sm: 960px !default;
+$breakpoint-md: 1280px !default;
+$breakpoint-lg: 1920px !default;
+@mixin layout-media($screen) {
+  @if($screen == default) {
+    @content;
+  } @else if($screen == xs){
+    @media (max-width: $breakpoint-xs - 1) {
+      @content;
+    }
+  } @else if($screen == gt-xs){
+    @media (min-width: $breakpoint-xs ) {
+      @content;
+    }
+  } @else if($screen == sm){
+    @media (min-width: $breakpoint-xs ) and (max-width: $breakpoint-sm -1) {
+      @content;
+    }
+  } @else if($screen == gt-sm){
+    @media (min-width: $breakpoint-sm ){
+      @content;
+    }
+  }@else if($screen == md){
+    @media (min-width: $breakpoint-sm ) and (max-width: $breakpoint-md -1) {
+      @content;
+    }
+  } @else if($screen == gt-md){
+    @media (min-width: $breakpoint-md ){
+      @content;
+    }
+  }@else if($screen == lg){
+    @media (min-width: $breakpoint-md ) {
+      @content;
+    }
+  } @else if($screen == gt-lg){
+    @media (min-width: $breakpoint-lg ){
+      @content;
+    }
+  }
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  // font-family: 'Open Sans Condensed', sans-serif;
+
+  background: url('./assets/background.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.button-success {
+  background: #ed7133;
+  color: white;
+  font-size: 14px;
+  width: 150px;
+  text-align: center;
+}
+
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+//For Firefox
+input[type=number] {
+  -moz-appearance: textfield !important;
+}

@@ -1,0 +1,23 @@
+<div class="transaction-item-container">
+  <app-search-sort (onMerchantSearch)="merchantSearch($event)" (onSort)="transactionSort($event)"></app-search-sort>
+  <div class="transactions">
+    <ul class="transaction-list">
+      <li *ngFor="let item of transactionItems">
+        <span class="bar" [style.backgroundColor]="item.categoryCode"></span>
+        <span class="date">{{item.dates.valueDate | date:'MMM d'}}</span>
+        <span class="image"><img width="40" [src]="getLogo(item.merchant)"></span>
+        <span class="transactionType">
+                <p>
+                    <strong>{{item.merchant.name}}</strong>
+                  {{item.transaction.type}}
+                </p>
+            </span>
+        <span class="amount">-${{item.transaction.amountCurrency.amount}}</span>
+      </li>
+    </ul>
+  </div>
+</div>
+
+
+
+

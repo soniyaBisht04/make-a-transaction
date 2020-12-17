@@ -1,0 +1,32 @@
+.recent-transactions-container {
+  background-color: #fff;
+  box-shadow: 0 0 10px #888888;
+  padding: 0 0 15px;
+  border-radius: 0;
+  flex: 2;
+  .mat-card-title {
+    background-color: #0c8397;
+    height: 60px;
+    color: #e7f0f2;
+    display: flex;
+    align-items: center;
+
+    .refresh-icon {
+      font-size: 30px;
+      flex: 0 0 40px;
+      padding-left: 5px;
+    }
+
+    .title {
+      font-size: 20px;
+      font-weight: normal;
+      text-align: center;
+      flex: 2;
+    }
+  }
+
+  .mat-card-content {
+    padding: 20px 15px;
+  }
+}
+

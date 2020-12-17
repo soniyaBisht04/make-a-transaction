@@ -1,0 +1,22 @@
+<section class="search-filter-container">
+  <div class="search">
+    <mat-form-field floatLabel="never">
+      <input type="search" matInput [formControl]="searchMerchant" placeholder="Search by typing.." />
+      <button mat-button *ngIf="searchMerchant" matSuffix mat-icon-button aria-label="Clear" (click)="clearInput()">
+        <mat-icon>close</mat-icon>
+      </button>
+    </mat-form-field>
+  </div>
+  <div class="filters">
+    <strong class="sort-by">{{'content.sortBy' | translate}}</strong>
+<!--    <span (click)="sortData(1)">Date</span>-->
+<!--    <span (click)="sortData(2)">Beneficiaries</span>-->
+<!--    <span (click)="sortData(3)">Amount</span>-->
+
+    <ul>
+      <li (click)="sortData(1)"><span>{{'content.date' | translate}} <i class="arrow" [ngClass]="sortByDate ? 'up' : 'down' "></i></span></li>
+      <li (click)="sortData(2)"><span>{{'content.beneficiaries' | translate}} <i class="arrow" [ngClass]="sortByBeneficiaries ? 'up' : 'down' "></i></span></li>
+      <li (click)="sortData(3)"><span>{{'content.amount' | translate}} <i class="arrow" [ngClass]="sortByAmount ? 'up' : 'down' "></i> </span></li>
+    </ul>
+  </div>
+</section>

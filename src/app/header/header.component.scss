@@ -1,0 +1,53 @@
+@use "../../styles";
+
+header {
+  background-color: #fff;
+  border-bottom: 2px solid #ed7133;
+  margin-bottom: 55px;
+  padding: 0 1% 0 4%;
+  //@include styles.layout-media(gt-xs) {
+  //  padding: 0 1% 0 %;
+  //}
+  @include styles.layout-media(gt-sm) {
+    padding: 0 1% 0 14%;
+  }
+
+  div {
+    display: inline-block;
+
+    a {
+      display: block;
+      padding: 5px;
+      @include styles.layout-media(gt-xs) {
+        padding: 12px;
+      }
+
+      img {
+        height: 15px;
+        @include styles.layout-media(gt-xs) {
+          height: 40px;
+        }
+      }
+    }
+  }
+
+  .app-logo {
+    width: 63%;
+    @include styles.layout-media(gt-xs) {
+      width: 70%;
+    }
+  }
+
+  .language-selector {
+    text-align: right;
+    width: 120px;
+    height: 45px;
+    @include styles.layout-media(gt-xs) {
+      width: 30%;
+    }
+
+    .mat-form-field {
+      width: 120px;
+    }
+  }
+}

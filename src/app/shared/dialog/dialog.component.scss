@@ -1,0 +1,18 @@
+.dialog-container {
+  .mat-dialog-content {
+    mat-label {
+      display: block;
+      span {
+        display: inline-block;
+        font-weight: 500;
+        width: 50%;
+      }
+      p {
+        display: inline;
+      }
+    }
+  }
+  .mat-dialog-actions {
+    flex-direction: row-reverse;
+  }
+}

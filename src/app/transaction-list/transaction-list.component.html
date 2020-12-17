@@ -1,0 +1,9 @@
+<mat-card class="recent-transactions-container">
+  <mat-card-title>
+    <mat-icon class="refresh-icon"> cached</mat-icon>
+    <mat-label class="title"> {{'content.recentTransaction' | translate}} </mat-label>
+  </mat-card-title>
+  <mat-card-content>
+    <app-transaction-item [transactions]="transactionList"></app-transaction-item>
+  </mat-card-content>
+</mat-card>

@@ -1,0 +1,18 @@
+{
+  "data": {
+    "content.makeATransfer": "Maak Een Overboeking",
+    "content.fromAccount": "VAN ACCOUNT",
+    "content.toAccount": "VERKLAREN",
+    "content.amount": "BEDRAG",
+    "content.submit": "VERZENDEN",
+    "content.transfer": "OVERDRACHT",
+    "content.confirmTransaction": "Bevestig Transactie",
+    "content.balance": "BALANS",
+    "content.recentTransaction": "Recente Transacties",
+    "content.seachByTyping": "Zoeken door te typen ...",
+    "content.sortBy": "Sorteer op",
+    "content.beneficiaries": "BEGUNSTIGDEN",
+    "content.date": "DATUM",
+    "content.language": "Taal"
+  }
+}
